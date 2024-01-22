@@ -13,3 +13,7 @@ O projeto consiste em três arquivos principais:
 - `main.js`: Este é o arquivo JavaScript que contém a lógica para obter os dados da localização da ISS e atualizar o mapa.
 
 - `style.css`: Este arquivo contém os estilos CSS para a página.
+
+## Acessar projeto
+
+Você pode acessar esse projeto através [desse link](https://wherethe-iss.vercel.app/)
