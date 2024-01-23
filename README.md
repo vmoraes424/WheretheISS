@@ -2,7 +2,7 @@
 
 Este é um projeto simples que mostra a localização atual da Estação Espacial Internacional (ISS) em um mapa.
 
-O mapa e as informações da ISS são atualizadas a cada segundo, em tempo real. Foi utilizado nesse projeto Javascript puro.
+O mapa e as informações da ISS são atualizadas a cada 5 segundos, em tempo real. Foi utilizado nesse projeto Javascript puro.
 
 ## Estrutura do Projeto
 
