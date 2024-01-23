@@ -1,4 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 #map { 
-  height: 500px; 
+  height: 500px;
   max-width: 800px;
+  border-radius: 20px;
+}
+a {
+  color: white;
+}
+
+body {
+  background-color: #232135;
+  color: white;
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+}
+
+.mapa {
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  gap: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+li {
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+li p {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.mapa {
+  margin-top: 20px;
 }

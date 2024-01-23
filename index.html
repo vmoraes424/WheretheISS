@@ -1,25 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <script src="main.js"></script>
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-   integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-   crossorigin=""/>
-   <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-   integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-   crossorigin=""></script>
-  <title>Where is it?</title>
-</head>
-<body> 
-  <h1>Cadê a ISS?</h1>
-  <p>Latitude: <span id="lat"></span></p>
-  <p>Longitude: <span id="lon"></span></p>
-  <p>Velocidade: <span id="vel"></span></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+      integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+      crossorigin=""
+    />
+    <script
+      src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+      integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+      crossorigin=""
+    ></script>
+    <title>Where is it?</title>
+  </head>
 
-  <div id="map"></div>
-</body>
+  <body>
+    <h1>Cadê a ISS?</h1>
+    <p>
+      Esse projeto mostra a localização em tempo real da ISS
+      <a
+        href="https://pt.wikipedia.org/wiki/Esta%C3%A7%C3%A3o_Espacial_Internacional"
+        target="_blank"
+      >(Estação Espacial Internacional)</a>
+    </p>
+    <p>* os dados se atualizam a cada 5 segundos</p>
+    <ul>
+      <li>
+        <p>Latitude:</p>
+        <span id="lat"></span>
+      </li>
+      <li>
+        <p>Longitude:</p>
+        <span id="lon"></span>
+      </li>
+      <li>
+        <p>Velocidade:</p>
+        <span id="vel"></span>
+      </li>
+    </ul>
+
+    <div class="mapa">
+      <div id="map"></div>
+    </div>
+  </body>
 </html>

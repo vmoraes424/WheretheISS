@@ -4,7 +4,7 @@ async function getISS() {
 
   const lat = data.latitude
   const lon = data.longitude
-  const vel = data.velocity.toFixed(1)
+  const vel = formatKm(data.velocity)
   
   document.getElementById('lat').textContent = lat;
   document.getElementById('lon').textContent = lon;
@@ -24,5 +24,9 @@ async function getISS() {
   const marker = L.marker([lat, lon], {icon: myIcon}).addTo(map);
   marker.setLatLng([lat, lon]);
 }
-setInterval(getISS, 1000);
+setInterval(getISS, 5000);
 window.onload = getISS()
+
+function formatKm(km) {
+  return km.toFixed(2).replace(/\d(?=(\d{3})+\.)/g, '$&,');
+}
